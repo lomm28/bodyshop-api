@@ -4,7 +4,10 @@
   "description": "Api for bodyshop graphQL project",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "8.15.0"
   },
   "keywords": [
     "API",
