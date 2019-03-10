@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules
+
+# environment variables file
+dev.js
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
