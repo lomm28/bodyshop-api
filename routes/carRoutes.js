@@ -38,12 +38,7 @@ module.exports = app => {
     });
 
     app.get("/api/cars/client/:id", async (req, res) => {
-        const clientId = req.params.id;
-    
-        Car.findById(clientId, (err, car) => {
-          if (err) return res.status(500).send("There was a problem finding the cars.");
-          if (!car) return res.status(404).send("No cars found.");
-          res.status(200).send(car);
-        });
+        const clientsCars = await Car.find({ clientId: req.params.id });
+        res.send(clientsCars);
       });
   }

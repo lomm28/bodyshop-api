@@ -9,10 +9,12 @@ module.exports = app => {
   });
 
   app.post("/api/clients", async (req, res) => {
-    const { firstName, lastName, id } = req.body;
+    const { firstName, lastName, email, phone, id } = req.body;
     const newClient = new ClientModel({
       firstName,
       lastName,
+      email, 
+      phone,
       id,
     });
     const client = await newClient.save();
