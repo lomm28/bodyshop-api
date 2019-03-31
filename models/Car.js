@@ -11,6 +11,7 @@ const carSchema = new Schema({
   productionYear: Number,
   issueDate: String,
   expiryDate: String,
+  clientId: Number,
 });
 
 module.exports = mongoose.model('Car', carSchema);

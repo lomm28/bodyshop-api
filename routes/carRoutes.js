@@ -18,7 +18,8 @@ module.exports = app => {
         status,
         productionYear,
         issueDate,
-        expiryDate, 
+        expiryDate,
+        clientId, 
       } = req.body;
       const newCar = new ClientModel({
         id,
@@ -30,6 +31,7 @@ module.exports = app => {
         productionYear,
         issueDate,
         expiryDate,
+        clientId,
       });
       const car = await newCar.save();
       res.send(car);
