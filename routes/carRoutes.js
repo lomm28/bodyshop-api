@@ -21,7 +21,7 @@ module.exports = app => {
         expiryDate,
         clientId, 
       } = req.body;
-      const newCar = new ClientModel({
+      const newCar = new CarModel({
         id,
         plateNumber,
         color,
