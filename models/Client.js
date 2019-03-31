@@ -4,6 +4,8 @@ const { Schema } = mongoose;
 const clientSchema = new Schema({
     firstName: String,
     lastName: String,
+    email: String,
+    phone: String,
     id: Number,
 });
 
